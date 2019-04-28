@@ -14,3 +14,7 @@
 			transform: translateY(-50%);
 		}
 ```
++ 同理水平方向用translateX().
+### 分液器
++ 按钮有种水波扩散的效果.
++ 1.
