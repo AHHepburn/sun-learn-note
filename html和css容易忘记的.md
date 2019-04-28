@@ -42,7 +42,28 @@
 ***
 ### 对transform的匀速运动.
 + 对一个盒子hover,如长宽或位置发生变化,都可以匀速处理.
-+ 代码:transition:all 2s ease.
++ html代码如下.
+```
+<div class="box">
+		<div class="son"></div>
+	</div>
+```
+```
+.box{
+			width: 800px;
+			height: 200px;
+			background-color:pink;
+		}
+		.son{
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+		}
+		.box:hover .son{
+			transform: translateX(600px);
+			transition: all 4s ease;
+		}
+```
 ***
 ### 嵌套崩塌
 + 两个盒子发生嵌套的时候，给子类设置maring会给父类造成一种崩塌现象，子类的margin-top没有效果，而直接作用到父类.
