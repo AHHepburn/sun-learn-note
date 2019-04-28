@@ -38,4 +38,7 @@
 			background-color: white;
 		}
 ```
+### 对transform的匀速运动.
++ 对一个盒子hover,如长宽或位置发生变化,都可以匀速处理.
++ 代码:transition:all 2s ease.
 
