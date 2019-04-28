@@ -48,6 +48,7 @@
 		<div class="son"></div>
 	</div>
 ```
++ css代码如下.
 ```
 .box{
 			width: 800px;
