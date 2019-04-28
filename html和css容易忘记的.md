@@ -15,6 +15,7 @@
 		}
 ```
 + 同理水平方向用translateX().
+***
 ### 分液器
 + 按钮有种水波扩散的效果.
 + 对box里的a标签设置分液器如下.
@@ -38,9 +39,11 @@
 			background-color: white;
 		}
 ```
+***
 ### 对transform的匀速运动.
 + 对一个盒子hover,如长宽或位置发生变化,都可以匀速处理.
 + 代码:transition:all 2s ease.
+***
 ### 嵌套崩塌
 + 两个盒子发生嵌套的时候，给子类设置maring会给父类造成一种崩塌现象，子类的margin-top没有效果，而直接作用到父类.
 + 解决方案： 1. 父类 overflow: hidden ; 2. 父类 设置极小的padding.
