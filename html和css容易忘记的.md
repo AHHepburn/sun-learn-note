@@ -17,4 +17,25 @@
 + 同理水平方向用translateX().
 ### 分液器
 + 按钮有种水波扩散的效果.
-+ 1:嗯嗯嗯
++ 对box里的a标签设置分液器如下.
+```其中background-clip:content是取消原背景色蔓延到border区域.
+.box{
+			height: 50px;
+			width: 50px;
+			background-color:pink;
+		}
+		a{
+			display: block;
+			width: 8px;
+			height: 8px;
+			background-color:yellow;
+			border: 3px solid transparent;
+			border-radius: 50%; 
+			background-clip: content-box;
+		}
+		a:hover{
+			border-color: yellow;
+			background-color: white;
+		}
+		```
+
