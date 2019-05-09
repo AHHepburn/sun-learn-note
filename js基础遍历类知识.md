@@ -242,3 +242,30 @@ arr.slice(0);   复制数组
 arr.splice(start,count,op);  分别对应要替换的下标位置,从这里替换几个,用什么代替,不写就是删除.
 ```
 ***
+## 字符串方法
+```
+charAt()获取相应位置字符  空格也占位置
+str.charAt(5);  获取相应下标位置的字符;
+
+charCodeAt(5) 方法可返回指定位置字符的 Unicode 编码
+
+indexOf() / lastIndexOf();  返回字符在字符串中的位置
+str.indexOf('y')
+(str.lastIndexOf('y');
+
+concat() 连接字符串
+str.concat(str2);
+
+slice()	方法可提取字符串的某个部分，并以新的字符串返回被提取的部分
+        console.log(str.slice(0,9)); // how are y
+        console.log(str.slice(0)); // how are you? and you?
+        console.log(str.slice(1,4)); // 'ow '
+        substr(起始位置,[取的个数])  截取字符串 返回截取的字符串
+        console.log(str.substr(0)); // 截取 整个字符串
+
+        转换大小写
+        console.log(str.toUpperCase()); // HOW ARE YOU? AND YOU?
+        console.log(str);
+        console.log(str.toLowerCase()); // how are you? and you?
+```
+***
