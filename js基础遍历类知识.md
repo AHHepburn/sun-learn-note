@@ -1,5 +1,6 @@
 + js当中内置对象
 + 创建构造函数(Date)的实例对象
+## Date对象
 ```
 var date = new Date();
 console.log(date);
@@ -32,5 +33,41 @@ var seconds = date.getSeconds();
 var milliseconds = date.GetMilliseconds();
 var weekDay = date.getDay();   周几
 var stamp date.getTime();  时间戳
+```
+***
+## Math对象
+```
+console.log(Math);   js当中的内置对象
+console.log(Math.ceil(2.3));  3 向上取整
+console.log(Math.floor(2.3));  2 向下取整
+console.log(Math.max(2,3,5,7)); 取最大
+console.log(Math.min(2,3,5,8)); 取最小
+console.log(Math.random());  [0,1),如果取0到99,*100
+console.log(Math.pow(3,4));  3的4次方
+console.log(Math.round(2.4)); 四舍五入
+```
+***
+## 逻辑运算符
+```
+console.log(true && false);  false
+console.log(true || false);  true
+console.log(false || false);  false
+console.log(!true);  false
+console.log(3<2<5>);  连比,错误写法;
+console.log(2>3 && 2<5>);  false
+```
+***
+## if语句
++ 找出水仙花数
+```
+for(var i = 100; i<=999; i++){
+    var x = Math.floor(i/100);
+    var y = Math.floor(Math.floor(i%100)/10);
+    var z =Math.floor(i%10);
+    if(Math.pow(x,3) + Math.pow(y,3) + Math.pow(z,3) = i){
+        console.log(i);
+    }
+}
+if语句中,如果else什么都不干,可以省略.
 ```
 ***
